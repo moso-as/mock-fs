@@ -417,7 +417,16 @@ def add_termin():
 
     conn.commit()
     conn.close()
+   
+   
+   
+def main():
+        add_activities()
+        add_members()
+        add_termin()
 
+if __name__ == "__main__":
+    main()
 
 
 

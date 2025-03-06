@@ -72,10 +72,6 @@ def get_db():
     finally:
         db.close()
 
-add_members()
-add_activities()
-add_termin()
-
 @app.post("/activities/")
 async def create_activity(activity: dict, db: Session = Depends(get_db)):
     """
